@@ -7,19 +7,13 @@ title: ZhouJay's Blog
 subtitle:
 description:
 author: ZhouJay 
-language: zh
+language: zh-CN
 timezone:
-date: 2017-06-01 21:56:56
-tags:
-- tag1
-- tag2
-intro : 'Enter intro here to display on home page'
-comments: false
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-#url: https://jatto.github.io/blog/ 
-url: https://jatto.github.io/JayZhou.github.io/ 
-root: /JayZhou.github.io/
+url: http://yoursite.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -44,7 +38,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace:
@@ -77,16 +71,16 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'default'
-  line_number: false    # default false
+admin:
+  username: jayzhou
+  password_hash: $2a$10$Dqzj1ypcW4M3jLNoF2.k5.kAfWIlFHpzWXTDbLi2pmTdD9bo9n1wW
+  secret: gDKSdt84
 ## Themes: https://hexo.io/themes/
-theme: clexy 
+theme: next 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: ssh://git@github.com/Jatto/JayZhou.github.io.git
-  branch: master 
+  repo: ssh://git@github.com/Jatto/JayZhou.github.io.git 
+  branch: hexo 
